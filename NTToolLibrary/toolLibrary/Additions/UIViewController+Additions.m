@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+Additions.h"
-#import <UIColor+HexString.h>
+#import "UIColor+HexString.h"
 
 @implementation UIViewController (Additions)
 

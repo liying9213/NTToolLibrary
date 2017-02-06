@@ -7,7 +7,7 @@
 //
 
 #import "NTRequestManager.h"
-#import <AFHTTPRequestOperationManager+Synchronous.h>
+#import "AFHTTPRequestOperationManager+Synchronous.h"
 
 #define timeoutValue 8.0f
 
