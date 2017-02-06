@@ -7,6 +7,7 @@
 //
 
 #import "NTRequestManager.h"
+#import "AFNetworking.h"
 #import "AFHTTPRequestOperationManager+Synchronous.h"
 
 #define timeoutValue 8.0f
@@ -97,8 +98,7 @@
 + (void)downloadFileWithOption:(NSDictionary *)paramDic
                  withInferface:(NSString*)requestURL
                      savedPath:(NSString*)savedPath
-               downloadSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-               downloadFailure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+                         block:(ResponseBlock)block
 
 {
     NSURL *url = [[NSURL alloc] initWithString:requestURL];
@@ -110,9 +110,9 @@
     
     //已完成下载
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        block(nil, responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-        //下载失败
+        block(error,nil);
     }];
     
     [operation start];

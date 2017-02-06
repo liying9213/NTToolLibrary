@@ -404,7 +404,7 @@
 				DEVELOPMENT_TEAM = WYNJ5A22VB;
 				INFOPLIST_FILE = NTToolLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nt.NTToolLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.izhixin.NTToolLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -417,7 +417,7 @@
 				DEVELOPMENT_TEAM = WYNJ5A22VB;
 				INFOPLIST_FILE = NTToolLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nt.NTToolLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.izhixin.NTToolLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
 
 typedef void(^ResponseBlock)(NSError *error, NSDictionary *response);
 
@@ -67,14 +66,12 @@ typedef void(^ResponseBlock)(NSError *error, NSDictionary *response);
  @param paramDic 参数
  @param requestURL 地址
  @param savedPath 存储地址
- @param success 成功回调
- @param failure 失败回调
+ @param block 回调
  */
 + (void)downloadFileWithOption:(NSDictionary *)paramDic
                  withInferface:(NSString*)requestURL
                      savedPath:(NSString*)savedPath
-               downloadSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-               downloadFailure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+                         block:(ResponseBlock)block;
 
 
 

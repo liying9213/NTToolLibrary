@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NTRequestManager.h"
 #import "NSString+Additions.h"
+#import "UIViewController+Additions.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self setNavTitle:@"sss"];
 }
 
 
