@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NTRequestManager.h"
+#import "NSString+Additions.h"
 
 @interface ViewController ()
 
